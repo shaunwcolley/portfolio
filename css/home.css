@@ -1,0 +1,185 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 100px;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  padding-bottom: 1.2rem;
+  margin-bottom: 0rem;
+}
+
+.section-description a {
+  text-decoration: none;
+  color: #C6D3FF;
+}
+
+.section-heading.sub {
+  color: #99B1FF;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.photos {
+  position: relative;
+}
+.photo {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.photo + .photo {
+  display: none;
+}
+
+/* skills
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.skills {
+  background-image: url('/black_balsam_knob_background.jpg');
+  background-size: cover;
+  color: #D2D2D2;
+  padding-bottom: 5rem;
+}
+.skill-multiplier {
+  margin-bottom: .5rem;
+  color: #C6D3FF;
+}
+.skill-heading {
+  margin-bottom: .3rem;
+}
+.skill-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+.background-bar {
+  background-color: rgba(131, 132, 134, 0.65)
+}
+
+.row {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+
+/* Skill Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+svg path {
+  fill: #C6D3FF;
+}
+
+/* Help
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-color: #838486;
+  /* background-image: url('../images/skills-bg.jpg'); */
+  background-size: cover;
+  color: #D2D2D2;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .about {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .photo {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .photo + .photo {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .about-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .about {
+    height: 190px;
+  }
+  .about-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .about {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photo {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .photo + .photo {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .about {
+    padding: 22rem 0;
+  }
+  .about-heading {
+    font-size: 3.0rem;
+  }
+  .photo {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .photo + .photo {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
