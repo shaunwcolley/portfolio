@@ -4,6 +4,12 @@
   border-radius: 100px;
 }
 
+.custom-button {
+  background-color: #C6D3FF;
+  color: white;
+  border-color: #C6D3FF;
+}
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -20,6 +26,10 @@
   text-decoration: none;
   color: #C6D3FF;
 }
+.section-description a:hover {
+  text-decoration: none;
+  color: white;
+}
 
 .section-heading.sub {
   color: #99B1FF;
@@ -28,6 +38,9 @@
 .row {
   display: flex;
   justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
 
 /* About
@@ -46,6 +59,11 @@
 
 /* skills
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.skills-color {
+  color: white;
+}
+
 .skills {
   background-image: url('/black_balsam_knob_background.jpg');
   background-size: cover;
@@ -68,18 +86,19 @@
   background-color: rgba(131, 132, 134, 0.65)
 }
 
-.row {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-
-
 /* Skill Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-svg path {
+svg path{
   fill: #C6D3FF;
+}
+
+div div div div:hover svg path {
+  fill:white;
+}
+
+div div div div div:hover {
+  color:white;
 }
 
 /* Help
@@ -87,6 +106,7 @@ svg path {
 .get-help {
   border-bottom: 1px solid #ddd;
 }
+
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -98,6 +118,16 @@ svg path {
 }
 .categories .section-description {
   margin-bottom: 4rem;
+}
+
+.skill {
+  color: #C6D3FF;
+}
+
+.firebase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Bigger than 550 */
@@ -125,9 +155,9 @@ svg path {
     z-index: 2;
     max-height: 338px;
   }
-  .about-heading {
+  /* .about-heading {
     font-size: 2.4rem;
-  }
+  } */
 }
 
 /* Bigger than 750 */
@@ -135,9 +165,9 @@ svg path {
   .about {
     height: 190px;
   }
-  .about-heading {
+  /* .about-heading {
     font-size: 2.6rem;
-  }
+  } */
   .section {
     padding: 14rem 0 15rem;
   }
@@ -171,9 +201,9 @@ svg path {
   .about {
     padding: 22rem 0;
   }
-  .about-heading {
+  /* .about-heading {
     font-size: 3.0rem;
-  }
+  } */
   .photo {
     top: -16rem;
     max-height: 615px;
