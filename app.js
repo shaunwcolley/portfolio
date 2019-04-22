@@ -10,6 +10,7 @@ app.set('view engine','mustache')
 app.use(express.static('css'))
 app.use(express.static('images'))
 app.use(express.static('js'))
+app.use(express.static('public'))
 
 app.get('/', (req,res) => {
   res.render('home')

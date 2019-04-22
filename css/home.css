@@ -17,6 +17,7 @@ body {
   top: 0;
   z-index: 999;
   width: 100%;
+  margin-bottom: 0;
 }
 
 #navbar-scroll a {
@@ -34,6 +35,10 @@ body {
 
 .nav-item li:hover {
   color: #2a2b2d;
+}
+
+.nav>li>a {
+  padding: 13px 15px;
 }
 
 /* About
