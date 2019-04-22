@@ -12,6 +12,7 @@ body {
 #navbar-scroll {
   background-color: #99B1FF;
   display: flex;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 999;
