@@ -17,35 +17,54 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
+  <!-- Bootstrap
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/bootstrap.min.css">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="/normalize.css">
   <link rel="stylesheet" href="/skeleton.css">
   <link rel="stylesheet" href="/home.css">
-  <!-- <link rel="stylesheet" href="/onepage-scroll.css"> -->
-
-  <!-- One Page Scroll JS file
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <script type="text/javascript" src="onepagescroll.js"></script> -->
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
+  <!-- Navbar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="section about">
-    <div class="container">
+  <nav id="navbar-scroll" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#about"><b>&nbsp; SC</b></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#get-help">Get Help</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#skills">Skills</a>
+    </li>
+  </ul>
+  </nav>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
+  <div id="about">
+    <div class="section about">
+      <div class="container">
       <div class="row">
         <div class="two-third column">
           <h3 class="about-heading">Shaun Colley</h3>
-          <h4 class="about-heading">Sofware Developer <h4>
+          <h5 class="about-heading">Sofware Developer <h5>
           <h5 class="about-heading">Houston, TX</h5>
             <a class="button custom-button" href="https://github.com/shaunwcolley">GitHub</a> &nbsp;
             <a class="button custom-button" href="https://www.linkedin.com/in/shaun-colley-317988184">LinkedIn</a>&nbsp;
             <a class="button custom-button" href="mailto:swc7838@gmail.com">Email</a>
-            <a class="button custom-button" href="#skills">skills</a> &nbsp;
-
         </div>
         <div class="one-half column photos">
           <img class="photo" src="">
@@ -53,35 +72,38 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
-
-  <div class="section categories">
-    <div class="container">
+  <div id="projects">
+    <div class="section categories">
+      <div class="container">
       <h3 class="section-heading">Recent Projects</h3>
       <br>
       <p class="section-description">The projects Shaun worked on were aimed at solving real world problems. <a href="https://github.com/shaunwcolley/DCraft-Workout">DCraft Workout App</a> was created because a collaborator wanted to have a place to store his weight lifting history as opposed to writing it down in a notes app. <a href="https://github.com/shaunwcolley/fullStackGolf">BH Golf League App</a> was created for similar reasons. A collaborator's golf league had a unique scoring sytem where there was no readily available application to use. Previously, the golf league was using excel spreadsheet and outdate coding languages to keep a record of their league. The BH Golf League App simultaneously updated the technology and streamlined the process to input scores and view current standings.</p>
       <div class="row">
         <div class="one-half column category">
-          <img class="u-max-full-width" src="">
+          <img class="u-max-full-width" src="dc-workout-mobile2.png">
         </div>
         <div class="one-half column category">
           <img class="u-max-full-width" src="">
         </div>
       </div>
     </div>
+    </div>
   </div>
-
-  <div class="section get-help">
-    <div class="container">
+  <div id="get-help">
+    <div class="section get-help">
+      <div class="container">
       <h3 class="section-heading">Need help getting started?</h3>
       <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
       <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
     </div>
+    </div>
   </div>
-
-  <div id="skills" class="section skills">
-    <div class="container">
-      <h1 class="section-heading skills-color">Skills</h1>
+  <div id="skills">
+    <div id="skills" class="section skills">
+      <div class="container">
+      <h1 class="section-heading skills-color"><b>Skills</b></h1>
       <h3 class="section-heading sub background-bar">Front-End</h3>
       <div class="row background-bar">
         <div class="two columns skill">
@@ -204,7 +226,15 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
+</div>
+
+  <!-- Bootstrap Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

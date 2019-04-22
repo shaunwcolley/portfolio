@@ -1,13 +1,50 @@
-/* Shared
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #D2D2D2;
+}
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#navbar-scroll {
+  background-color: #99B1FF;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+#navbar-scroll a {
+  color: white;
+}
+#navbar-scroll a:hover {
+  background-color: #99B1FF;
+  color: #2a2b2d;
+}
+
+#navbar-scroll ul {
+  right: 0;
+  position: absolute;
+}
+
+.nav-item li:hover {
+  color: #2a2b2d;
+}
+
+/* About
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
   border-radius: 100px;
 }
 
 .custom-button {
-  background-color: #C6D3FF;
+  background-color: #99B1FF;
   color: white;
-  border-color: #C6D3FF;
+  border-color: #99B1FF;
 }
 
 /* Sections
@@ -83,7 +120,7 @@
 }
 
 .background-bar {
-  background-color: rgba(131, 132, 134, 0.65)
+  background-color: rgba(42, 43, 45, 0.65)
 }
 
 /* Skill Icons
@@ -93,25 +130,25 @@ svg path{
   fill: #C6D3FF;
 }
 
-div div div div:hover svg path {
+div div div div div div:hover svg path {
   fill:white;
 }
 
-div div div div div:hover {
+div div div div div div:hover h4{
   color:white;
 }
 
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
-  border-bottom: 1px solid #ddd;
+  background-color: #D2D2D2;
 }
 
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background-color: #838486;
+  background-color: #2a2b2d;
   /* background-image: url('../images/skills-bg.jpg'); */
   background-size: cover;
   color: #D2D2D2;
@@ -133,10 +170,10 @@ div div div div div:hover {
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
-    padding: 12rem 0 11rem;
+    padding: 10rem 0 11rem;
   }
   .about {
-    padding-bottom: 12rem;
+    padding-bottom: 37rem;
     text-align: left;
     height: 165px;
   }
@@ -172,7 +209,7 @@ div div div div div:hover {
     padding: 14rem 0 15rem;
   }
   .about {
-    padding: 16rem 0 14rem;
+    padding: 8rem 0 30rem;
   }
   .section-description {
     max-width: 85%;
@@ -196,10 +233,10 @@ div div div div div:hover {
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 20rem 0 19rem;
+    padding: 19rem 0 19rem;
   }
   .about {
-    padding: 22rem 0;
+    padding: 12rem 0 36rem;
   }
   /* .about-heading {
     font-size: 3.0rem;
