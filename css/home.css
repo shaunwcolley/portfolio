@@ -102,7 +102,7 @@ body {
 }
 
 .skills {
-  background-image: url('/black_balsam_knob_background.jpg');
+  background-image: url('/skill_background.png');
   background-size: cover;
   color: #D2D2D2;
   padding-bottom: 5rem;
@@ -149,7 +149,6 @@ div div div div div div:hover h4{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .projects {
   background-color: #2a2b2d;
-  /* background-image: url('../images/skills-bg.jpg'); */
   background-size: cover;
   color: #D2D2D2;
 }
