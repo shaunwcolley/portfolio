@@ -12,10 +12,12 @@ body {
 #navbar-scroll {
   background-color: #99B1FF;
   display: flex;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 999;
   width: 100%;
+  margin-bottom: 0;
 }
 
 #navbar-scroll a {
@@ -33,6 +35,10 @@ body {
 
 .nav-item li:hover {
   color: #2a2b2d;
+}
+
+.nav>li>a {
+  padding: 13px 15px;
 }
 
 /* About
@@ -57,6 +63,10 @@ body {
 .section-description {
   padding-bottom: 1.2rem;
   margin-bottom: 0rem;
+}
+
+.about-me-heading {
+  margin-bottom: 3rem;
 }
 
 .section-description a {
@@ -94,6 +104,12 @@ body {
   display: none;
 }
 
+.large-photo-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 /* skills
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -102,7 +118,7 @@ body {
 }
 
 .skills {
-  background-image: url('/black_balsam_knob_background.jpg');
+  background-image: url('/skill_background.png');
   background-size: cover;
   color: #D2D2D2;
   padding-bottom: 5rem;
@@ -130,11 +146,11 @@ svg path{
   fill: #C6D3FF;
 }
 
-div div div div div div:hover svg path {
+div div div div div:hover svg path {
   fill:white;
 }
 
-div div div div div div:hover h4{
+div div div div div div:hover h5{
   color:white;
 }
 
@@ -149,7 +165,6 @@ div div div div div div:hover h4{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .projects {
   background-color: #2a2b2d;
-  /* background-image: url('../images/skills-bg.jpg'); */
   background-size: cover;
   color: #D2D2D2;
 }
@@ -172,18 +187,17 @@ div div div div div div:hover h4{
 }
 
 #bh-score {
-  height: 50rem;
+  height: 30rem;
 }
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
-    padding: 10rem 0 11rem;
+    padding: 5rem 0 5rem;
   }
   .about {
-    padding-bottom: 37rem;
     text-align: left;
-    height: 165px;
+    height: 100%;
   }
   .photo {
     position: absolute;
@@ -200,18 +214,32 @@ div div div div div div:hover h4{
     z-index: 2;
     max-height: 338px;
   }
+
+  /* .large-photo {
+    display: none;
+  } */
+  .small-photo {
+    max-height: 100%;
+    max-width:80%;
+    padding-bottom: 3rem;
+  }
+  .small-photo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-container {
+    width: 100%;
+  }
 }
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
-  .about {
-    height: 190px;
-  }
   .section {
-    padding: 14rem 0 15rem;
+    padding: 10rem 0 8rem;
   }
   .about {
-    padding: 8rem 0 30rem;
+    padding: 8rem 0 20rem;
   }
   .section-description {
     max-width: 85%;
@@ -228,17 +256,27 @@ div div div div div div:hover h4{
     max-height: 472px;
   }
   .projects {
-    padding: 15rem 0 8rem;
+    padding: 10rem 0 8rem;
+  }
+  .large-photo {
+    max-width: 80%;
+    max-height: 50rem;
+  }
+  .small-photo {
+    display: none;
+  }
+  .custom-container {
+    width: 85%;
   }
 }
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 19rem 0 19rem;
+    padding: 10rem 0 8rem;
   }
   .about {
-    padding: 12rem 0 36rem;
+    padding: 12rem 0 20rem;
   }
   .photo {
     top: -16rem;
@@ -248,14 +286,56 @@ div div div div div div:hover h4{
     top: -14rem;
     max-height: 570px;
   }
-}
-
-/* Smaller than 750 to hide images */
-@media only screen and (max-width: 799px) {
-  #dc-mobile {
+  .large-photo {
+    max-width: 80%;
+    max-height: 50rem;
+  }
+  .small-photo {
     display: none;
   }
+  .custom-container {
+    width: 80%;
+  }
+}
+
+
+/* Smaller than 799 to hide images */
+@media only screen and (max-width: 799px) {
   #bh-score {
     display:none;
   }
+}
+
+@media only screen and (max-width: 999px) {
+  #wayfinder {
+    display: none;
+  }#noise {
+    display:none;
+}
+
+/* Smaller than 750 to hide large image */
+@media only screen and (max-width: 750px) {
+  .large-photo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .small-photo {
+    max-height: 100%;
+    max-width:80%;
+    padding-bottom: 3rem;
+  }
+  .small-photo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-container {
+    width: 100%;
+  }
+}
+
+.projects {
+  height: 100%;
 }
