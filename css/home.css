@@ -146,11 +146,11 @@ svg path{
   fill: #C6D3FF;
 }
 
-div div div div div div:hover svg path {
+div div div div div:hover svg path {
   fill:white;
 }
 
-div div div div div div:hover h4{
+div div div div div div:hover h5{
   color:white;
 }
 
@@ -187,7 +187,7 @@ div div div div div div:hover h4{
 }
 
 #bh-score {
-  height: 50rem;
+  height: 30rem;
 }
 
 /* Bigger than 550 */
@@ -228,15 +228,15 @@ div div div div div div:hover h4{
     align-items: center;
     justify-content: center;
   }
+  .custom-container {
+    width: 100%;
+  }
 }
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
-  /* .about {
-    height: 190px;
-  } */
   .section {
-    padding: 10rem 0 15rem;
+    padding: 10rem 0 8rem;
   }
   .about {
     padding: 8rem 0 20rem;
@@ -265,12 +265,15 @@ div div div div div div:hover h4{
   .small-photo {
     display: none;
   }
+  .custom-container {
+    width: 85%;
+  }
 }
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 10rem 0 19rem;
+    padding: 10rem 0 8rem;
   }
   .about {
     padding: 12rem 0 20rem;
@@ -290,17 +293,26 @@ div div div div div div:hover h4{
   .small-photo {
     display: none;
   }
+  .custom-container {
+    width: 80%;
+  }
 }
 
 
 /* Smaller than 799 to hide images */
 @media only screen and (max-width: 799px) {
-  #dc-mobile {
-    display: none;
-  }#bh-score {
+  #bh-score {
     display:none;
   }
 }
+
+@media only screen and (max-width: 999px) {
+  #wayfinder {
+    display: none;
+  }#noise {
+    display:none;
+}
+
 /* Smaller than 750 to hide large image */
 @media only screen and (max-width: 750px) {
   .large-photo {
@@ -318,6 +330,9 @@ div div div div div div:hover h4{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .custom-container {
+    width: 100%;
   }
 }
 
