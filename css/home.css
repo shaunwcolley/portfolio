@@ -61,7 +61,7 @@ body {
 }
 .section-heading,
 .section-description {
-  padding-bottom: 1.2rem;
+  padding-bottom: .8rem;
   margin-bottom: 0rem;
 }
 
@@ -153,6 +153,15 @@ div div div div div:hover svg path {
 div div div div div div:hover h5{
   color:white;
 }
+svg {
+  margin: .5rem;
+}
+svg polygon{
+  fill: #C6D3FF;
+}
+div div div div div:hover svg polygon {
+  fill:white;
+}
 
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -169,7 +178,7 @@ div div div div div div:hover h5{
   color: #D2D2D2;
 }
 .projects .section-description {
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 .skill {
@@ -188,6 +197,34 @@ div div div div div div:hover h5{
 
 #bh-score {
   height: 30rem;
+}
+
+.project-details {
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #D2D2D2;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-details:last-child {
+  border-bottom: none;
+}
+
+.project-deatils-first {
+  margin-top: 0rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Bigger than 550 */
@@ -215,9 +252,6 @@ div div div div div div:hover h5{
     max-height: 338px;
   }
 
-  /* .large-photo {
-    display: none;
-  } */
   .small-photo {
     max-height: 100%;
     max-width:80%;
@@ -262,9 +296,6 @@ div div div div div div:hover h5{
     max-width: 80%;
     max-height: 50rem;
   }
-  .small-photo {
-    display: none;
-  }
   .custom-container {
     width: 85%;
   }
@@ -298,26 +329,44 @@ div div div div div div:hover h5{
   }
 }
 
+@media (min-width: 800px) {
+  .small-photo {
+    display: none;
+  }
+  .small-screenshot {
+    display: none;
+  }
+  .large-photo {
+    max-width: 80%;
+    max-height: 50rem;
+  }
+}
 
 /* Smaller than 799 to hide images */
 @media only screen and (max-width: 799px) {
   #bh-score {
     display:none;
   }
+  .large-photo {
+    display: none;
+  }
+  .small-screenshot {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 999px) {
   #wayfinder {
     display: none;
-  }#noise {
+  }
+  #noise {
     display:none;
+  }
 }
 
 /* Smaller than 750 to hide large image */
 @media only screen and (max-width: 750px) {
-  .large-photo {
-    display: none;
-  }
+
 }
 
 @media only screen and (max-width: 550px){
