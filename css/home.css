@@ -210,6 +210,8 @@ div div div div div:hover svg polygon {
   flex-direction: column;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .project-details:last-child {
