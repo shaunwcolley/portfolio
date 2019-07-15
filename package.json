@@ -19,6 +19,7 @@
   "dependencies": {
     "devicon": "^2.2.0",
     "express": "^4.16.4",
+    "lodash": "^4.17.14",
     "mustache-express": "^1.2.8"
   }
 }
